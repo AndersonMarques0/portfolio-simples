@@ -1,0 +1,201 @@
+/* Reset básico para garantir consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Seções principais */
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 50px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+#nav-bar {
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Alinha ao topo da página */
+    left: 0; /* Alinha ao lado esquerdo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: #333; /* Cor de fundo */
+    padding: 10px 0; /* Espaçamento interno */
+    z-index: 1000; /* Garante que a nav-bar fique acima de outros elementos */
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+#nav-bar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Para dar um espaçamento extra no topo do conteúdo principal, já que a barra fica fixa */
+main {
+    padding-top: 50px; /* Ajuste o valor conforme o tamanho da nav-bar */
+}
+
+/* Primeira seção */
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.div-ul {
+    width: 50%;
+}
+
+.div-ul ul {
+    list-style-type: none;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.div-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#sneakers-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Segunda seção */
+.second {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.second iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Terceira seção */
+.third {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+/* Formulário */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#email {
+    padding: 8px;
+    margin-top: 5px;
+    width: 70%;
+    max-width: 300px;
+}
+
+#submit {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tela pequena (menor que 768px) */
+@media (max-width: 768px) {
+    .first {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-ul {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .div-ul ul {
+        font-size: 2rem;
+    }
+
+    .div-image {
+        width: 80%;
+    }
+
+    .third {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #email {
+        width: 80%;
+    }
+}
+
+/* Tela muito pequena (menos de 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #nav-bar {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #nav-bar a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .div-image ul {
+        font-size: 16px;
+    }
+
+    .second iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

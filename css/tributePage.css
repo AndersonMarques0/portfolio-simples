@@ -1,0 +1,61 @@
+/* Cores do Discord (adaptadas) */
+:root {
+    --discord-purple: #7289DA;
+    --discord-gray: #36393F;
+    --discord-light: #F2F3F5;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--discord-light);
+    color: var(--discord-gray);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: var(--discord-purple);
+    color: white;
+    padding: 20px;
+  }
+  
+  #title {
+    font-size: 2em;
+  }
+  
+  #img-div {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  #image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  #tribute-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  h3 {
+    color: var(--discord-purple);
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--discord-gray);
+  }
+  
+  a {
+    color: var(--discord-purple);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

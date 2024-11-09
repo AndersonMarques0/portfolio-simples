@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="css/surveyForm.css"
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Formulário de Pesquisa</h1>
+      <p id="description">Agradecemos sua participação nessa pesquisa!</p>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Nome <input id="name" type="text" required placeholder="Anderson Marques" /></label>
+          <label for="email" id="email-label">Email <input id="email" type="email" required placeholder="usuario@email.com" /></label>
+          <label for="number" id="number-label">Idade <input id="number" type="number" min="14" max="80" placeholder="20" /></label>
+        </fieldset>
+      <fieldset>
+        <legend> Em qual estado do Brasil você mora? </legend>
+        <select id="dropdown">
+          <option value="opcao">Selecione uma opção</option>
+          <option value="acre">Acre (AC)</option>
+          <option value="alagoas">Alagoas (AL)</option>
+          <option value="amapa">Amapá (AP)</option>
+          <option value="amazonas">Amazonas (AM)</option>
+          <option value="bahia">Bahia (BA)</option>
+          <option value="ceara">Ceará (CE)</option>
+          <option value="espirito-santo">Espírito Santo (ES)</option>
+          <option value="goias">Goiás (GO)</option>
+          <option value="maranhao">Maranhão (MA)</option>
+          <option value="mato-grosso">Mato Grosso (MT)</option>
+          <option value="mato-grosso-sul">Mato Grosso do Sul (MS)</option>
+          <option value="minas-gerais">Minas Gerais (MG)</option>
+          <option value="para">Pará (PA)</option>
+          <option value="paraiba">Paraíba (PB)</option>
+          <option value="parana">Paraná (PR)</option>
+          <option value="pernambuco">Pernambuco (PE)</option>
+          <option value="piaui">Piauí (PI)</option>
+          <option value="rio-de-janeiro">Rio de Janeiro (RJ)</option>
+          <option value="rio-grande-sul">Rio Grande do Sul (RS)</option>
+          <option value="rondonia">Rondônia (RO)</option>
+          <option value="roraima">Roraima (RR)</option>
+          <option value="santa-catarina">Santa Catarina (SC)</option>
+          <option value="sao-paulo">São Paulo (SP)</option>
+          <option value="sergipe">Sergipe (SE)</option>
+          <option value="tocantis">Tocantis (TO)</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Em suas refeições é frequente o consumo de verduras e hortaliças?</legend>
+        <label for="sim"><input type="radio" name="vegetais" value="sim" class="inline"> Sim</label>
+        <label for="nao"><input type="radio" name="vegetais" value="nao" class="inline"> Não</label>
+      </fieldset>
+      <fieldset>
+        <legend>Qual sobremesa você costuma consumir frutas ou doces?</legend>
+        <label for="frutas"><input type="radio" name="sobremesa" value="frutas" class="inline">Frutas</label>
+        <label for="doces"><input type="radio" name="sobremesa" value="doces" class="inline">Doces</label>
+      </fieldset>
+      <fieldset>
+        <legend>Quais tipos de alimentos você tem o hábito de comer? </legend>
+        <label for=""><input type="checkbox" value="1" class="inline"> Alimentos in natura</label>
+        <label for=""><input type="checkbox" value="2" class="inline"> Alimentos minimamente processados</label>
+        <label for=""><input type="checkbox" value="3" class="inline"> Alimentos processados</label>
+        <label for=""><input type="checkbox" value="4" class="inline"> Alimentos ultraprocessados</label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="comentarios">Comente quais alimentos você mais gosta de comer.</label>
+        <textarea id="comentarios" name="comentarios" rows="6" cols="10"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Enviar</button>
+        </form>
+    </main>
+
+  </body>
+</html>

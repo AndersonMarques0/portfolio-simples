@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+body, html, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f7f7f7; /* Fundo claro */
+    color: #333333; /* Cor do texto */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2d3e50; /* Azul escuro moderno */
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #E18988; /* Coral suave */
+    border-radius: 5px;
+}
+
+main {
+    background-color: #E18988; /* Coral suave */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 4rem;
+    color: #2d3e50; /* Azul escuro para o título */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 3rem;
+    color: #2d3e50; /* Azul escuro para subtítulo */
+    margin-bottom: 40px;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+.projects-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.project {
+    width: 340px; /* Ajuste o tamanho para um layout mais fluido */
+    height: 360px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Melhorando os títulos dos projetos */
+.project a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.project:hover .project-info {
+    opacity: 1; /* Exibe informações do projeto ao passar o mouse */
+}
+
+.project-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
